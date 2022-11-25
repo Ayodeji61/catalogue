@@ -146,7 +146,6 @@ function mongoConnect() {
 }
 }
 
-
 if (process.env.DOCUMENTDB == 'true') {
 function mongoConnect() {
     return new Promise((resolve, reject) => {
@@ -181,7 +180,6 @@ function mongoLoop() {
         setTimeout(mongoLoop, 2000);
     });
 }
-
 
 mongoLoop();
 
